@@ -19,9 +19,7 @@ let parseData = (data) => {
     return parsedData;
 };
 
-let parsedData = parseData(data)
-
-
+let parsedData = parseData(data);
 let comparaison = 0;
 
 function mergeSort(array) {
@@ -48,7 +46,7 @@ function mergeSort(array) {
         rightIndex++;
       }
     }
-    return result.concat(left.slice(leftIndex), right.slice(rightIndex)); // the concatenate includes the remaining elements which have not been overviewed
+    return result.concat(left.slice(leftIndex), right.slice(rightIndex)); // the concatenate method includes the remaining elements which have not been viewed
   };
 
   return fusion(mergeSort(leftArray), mergeSort(rightArray));

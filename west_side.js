@@ -38,7 +38,7 @@ let countWestOrientatedN2Complexity = (array) => {
         // otherwise, all the buildings further to the west are smaller than our building
     }
     
-    return (array.length - noViewBuildingCount);
+    return (array.length - noViewBuildingCount); // return the number of buildins with a view on west
 }
 
 console.log(`With N2 complexity: The number of buildings with a view on the West is ${countWestOrientatedN2Complexity(array)}`);
